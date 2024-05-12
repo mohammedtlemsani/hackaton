@@ -1,5 +1,9 @@
 # HealthChain Hackathon Project
 
+## Context
+This project is developed within the N7Challenge hackathon organized by ENSET Mohammedia and the N7Geeks club. The aim of the hackathon is to explore and utilize web3 and AI technologies within the Moroccan context, fostering innovation and collaboration among participants.
+
+
 ## Overview
 
 Welcome to our HealthChain hackathon project! This application leverages blockchain technology, IPFS (InterPlanetary File System), and smart contracts to securely manage and share medical records. The goal is to provide patients and healthcare providers with a decentralized, transparent, and efficient system for storing and accessing sensitive health data.
