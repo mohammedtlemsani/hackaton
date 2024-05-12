@@ -1,0 +1,74 @@
+<div class="w-full mt-12">
+       <div class="w-full lg:w-11/12 mt-6 pl-0 lg:pl-2 ">
+          <p class="text-xl pb-6 flex items-center">
+            <i class="fas fa-list mr-3"></i> Add Patient
+          </p>
+          <div class="leading-loose">
+            <form [formGroup]="patientForm" class="p-10 bg-white rounded shadow-xl" (ngSubmit)="handleSubmitPatient()">
+              <p class="text-lg text-gray-800 font-medium pb-4">Patient Information</p>
+              <div class="">
+                <label class="block text-sm text-gray-600" for="name">Name</label>
+                <input formControlName="name" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Name">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="age">Age</label>
+                <input formControlName="age" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Age">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="sex">Sex</label>
+                <input formControlName="sex" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Sex">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="chestPainType">Chest Pain Type</label>
+                <input formControlName="chestPainType" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Chest Pain Type">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="restingBloodPressure">Resting Blood Pressure</label>
+                <input formControlName="restingBloodPressure" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Resting Blood Pressure">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="serumCholesterol">Serum Cholesterol</label>
+                <input formControlName="serumCholesterol" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Serum Cholesterol">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="fastingBloodSugar">Fasting Blood Sugar</label>
+                <input formControlName="fastingBloodSugar" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Fasting Blood Sugar">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="restingElectrocardiographicResults">Resting Electrocardiographic Results</label>
+                <input formControlName="restingElectrocardiographicResults" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Resting Electrocardiographic Results">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="maximumHeartRateAchieved">Maximum Heart Rate Achieved</label>
+                <input formControlName="maximumHeartRateAchieved" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Maximum Heart Rate Achieved">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="exerciseInducedAngina">Exercise Induced Angina</label>
+                <input formControlName="exerciseInducedAngina" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Exercise Induced Angina">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="stDepressionInducedByExerciseRelativeToRest">ST Depression Induced by Exercise Relative to Rest</label>
+                <input formControlName="stDepressionInducedByExerciseRelativeToRest" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="ST Depression Induced by Exercise Relative to Rest">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="slopeOfPeakExerciseSTSegment">Slope of the Peak Exercise ST Segment</label>
+                <input formControlName="slopeOfPeakExerciseSTSegment" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Slope of the Peak Exercise ST Segment">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="numberOfMajorVesselsColoredByFlourosopy">Number of Major Vessels (0-3) Colored by Flourosopy</label>
+                <input formControlName="numberOfMajorVesselsColoredByFlourosopy" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Number of Major Vessels (0-3) Colored by Flourosopy">
+              </div>
+              <div class="mt-2">
+                <label class="block text-sm text-gray-600" for="thalassemia">Thalassemia</label>
+                <input formControlName="thalassemia" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Thalassemia">
+              </div>
+              <div class="mt-6">
+                <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">Save</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+

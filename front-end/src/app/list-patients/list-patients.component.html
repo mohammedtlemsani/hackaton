@@ -1,0 +1,35 @@
+<div class="w-full mt-12">
+  <div class="w-full lg:w-11/12 mt-6 pl-0 lg:pl-2 ">
+    <p class="text-xl pb-6 flex items-center">
+      <i class="fas fa-list mr-3"></i> Patient List
+    </p>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Loop through patients data and display each patient as a card -->
+      <div *ngFor="let patient of patients" class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">{{ patient.name }}</div>
+          <p class="text-gray-700 text-base">
+            Age: {{ patient.age }}<br>
+            Sex: {{ patient.sex }}<br>
+            Chest Pain Type: {{ patient.chestPainType }}<br>
+            Resting Blood Pressure: {{ patient.restingBloodPressure }}<br>
+            Serum Cholesterol: {{ patient.serumCholesterol }}<br>
+            Fasting Blood Sugar: {{ patient.fastingBloodSugar }}<br>
+            Resting Electrocardiographic Results: {{ patient.restingElectrocardiographicResults }}<br>
+            Maximum Heart Rate Achieved: {{ patient.maximumHeartRateAchieved }}<br>
+            Exercise Induced Angina: {{ patient.exerciseInducedAngina }}<br>
+            ST Depression Induced by Exercise Relative to Rest: {{ patient.stDepressionInducedByExerciseRelativeToRest }}<br>
+            Slope of the Peak Exercise ST Segment: {{ patient.slopeOfPeakExerciseSTSegment }}<br>
+            Number of Major Vessels (0-3) Colored by Flourosopy: {{ patient.numberOfMajorVesselsColoredByFlourosopy }}<br>
+            Thalassemia: {{ patient.thalassemia }}<br>
+            <!-- Add more patient information as needed -->
+          </p>
+        </div>
+        <div class="px-6 py-4">
+          <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded">Edit</button>
+          <button class="ml-2 px-4 py-1 text-white font-light tracking-wider bg-red-500 rounded">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

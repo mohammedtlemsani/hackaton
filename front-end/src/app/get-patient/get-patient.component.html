@@ -1,0 +1,26 @@
+<div class="w-full mt-12">
+  <div class="w-full lg:w-11/12 mt-6 pl-0 lg:pl-2 ">
+    <p class="text-xl pb-6 flex items-center">
+      <i class="fas fa-list mr-3"></i> Get Patient
+    </p>
+    <div class="leading-loose">
+      <form [formGroup]="patientForm" class="p-10 bg-white rounded shadow-xl" (ngSubmit)="handlegetPatient()">
+        <p class="text-lg text-gray-800 font-medium pb-4">Patient Information</p>
+        <div class="">
+          <label class="block text-sm text-gray-600">HASH code</label>
+          <input formControlName="hash" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Name">
+        </div>
+        <div class="mt-2">
+          <label class="block text-sm text-gray-600" >SECRET KEY</label>
+          <input formControlName="secretKey" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="text" aria-label="Age">
+        </div>
+        <div class="mt-6">
+          <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">Save</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
